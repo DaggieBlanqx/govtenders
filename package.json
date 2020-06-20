@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "quickpush": "cls && git status && git add * && git commit * -m \"Updated Code\" && git push"
+    "quickpush": "cls && git status && git add * && git commit * -m \"Updated Code\" && git push",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{main/components,.,*,__{tests,mocks}__}/**/*.js\""
   },
   "keywords": [],
   "author": "",
